@@ -104,90 +104,48 @@ Use ```http://localhost:8080``` at first with certain api path to access the inf
 2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
 ```git clone https://github.com/yukilu61/mastercard-code-challenge.git```
 
-3. open application in favority IDE and run application locally
+3. open application in favority IDE, add [City.txt]() file under resource file and run application locally
 4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congratulations, you get the result!
 
 # Project Structure
 
 mastercard-code-challenge
-|_README.md
-
-|_codechallenge
-
-| |_codechallenge.iml
-
-| |_HELP.md
-
-| |_mvnw  
-
-| |_mvnw.cmd 
-
-| |_pom.xml 
-
-| |_src
-
-| | |_main
-
-| | | |_java.com.yuki.codechallenge
-
-| | | | |_CodechallengeApplication.java
-
-| | | | |_controller
-
-| | | | | |_CityController.java
-
-| | | | | |_ConnectionController.java
-
-| | | | |_dto
-
-| | | | | |_City.java
-
-| | | | | |_Connection.java
-
-| | | | |_repository
-
-| | | | | |_CityConnectionRepository.java
-
-| | | | | |_implementation
-
-| | | | | | |_CityConnectionRepositoryImpl.java
-
-| | | | |_service
-
-| | | | | |_CityConnectionService.java
-
-| | | | | |_implementation
-
-| | | | | | |_CityConnectionServiceImpl.java
-
-| | | |_resource
-
-| | | | |_application.properties
-
-| | | | |_City.txt
-
-| | |_test
-
-| | | |_java.com.yuki.codechallenge
-
-| | | | |_CodechallengeApplicationTests.java
-
-| | | | |_controllertest
-
-| | | | | |_CityControllerTest.java
-
-| | | | | |_ConnectionControllerTest.java
-
-| | | | |_repositorytest
-
-| | | | | |_CityConnectionRepositoryTest.java
-
-| | | | |_servicetest
-
-| | | | | |_CityConnectionServiceTest.java
-
-| |_target
+├── README.md
+├── codechallenge
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├──java.com.yuki.codechallenge
+│   │   │   │  ├── CodechallengeApplication.java
+│   │   │   │  ├── controller
+│   │   │   │  │   ├── CityController.java
+│   │   │   │  │   └── ConnectionController.java
+│   │   │   │  ├── dto
+│   │   │   │  │   ├── City.java
+│   │   │   │  │   └── Connection.java
+│   │   │   │  ├── repository
+│   │   │   │  │   ├── CityConnectionRepository.java
+│   │   │   │  │   └── implementation
+│   │   │   │  │       └── CityConnectionRepositoryImpl.java
+│   │   │   │  └── service
+│   │   │   │  │   ├── CityConnectionService.java
+│   │   │   │  │   └── implementation
+│   │   │   │  │       └── CityConnectionServiceImpl.java
+│   │   │   ├──resource
+│   │   │   │  ├── application.properties
+│   │   │   │  └── City.txt
+│   │   └── test
+│   │       └──java.com.yuki.codechallenge
+│   │          ├── CodechallengeApplicationTests.java
+│   │          ├── controllertest
+│   │          │   ├── CityControllerTest.java
+│   │          │   └── ConnectionControllerTest.java
+│   │          ├── repositorytest
+│   │          │   └── CityConnectionRepositoryTest.java
+│   │          └── servicetest
+│   │              └── CityConnectionServiceTest.java
+└── └── target
 
 # Algorithm & Data Structure
 
@@ -214,24 +172,3 @@ Used a hash map to mark connections of current city, if two cities are connected
 3.  if connected city in the map is already marked as true which means it has already searched, then do nothing, otherwise, the connected city is the first time to be searched, so depth first search connected city and mark it's connected city.
 4.  repeat the step2 recursively until all connected cities are marked as true
 5.  return the VALUE value of destination city in the map
-
-
-
-
-
-
-
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
