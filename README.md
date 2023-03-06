@@ -91,8 +91,8 @@ the server port is 8080.
 
 1. install Java 8: [install java8](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 2. git clone 
-3. run application
-4. input the path like [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
+3. choose favority IDE and run application in IDE
+4. input the query path, try this link: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congrulations, you get the result!
 
 # Structure
