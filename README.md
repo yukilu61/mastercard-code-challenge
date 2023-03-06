@@ -112,43 +112,81 @@ Use ```http://localhost:8080``` at first with certain api path to access the inf
 
 mastercard-code-challenge
 |_README.md
+
 |_codechallenge
+
 | |_codechallenge.iml
+
 | |_HELP.md
+
 | |_mvnw  
+
 | |_mvnw.cmd 
+
 | |_pom.xml 
+
 | |_src
+
 | | |_main
+
 | | | |_java.com.yuki.codechallenge
+
 | | | | |_CodechallengeApplication.java
+
 | | | | |_controller
+
 | | | | | |_CityController.java
+
 | | | | | |_ConnectionController.java
+
 | | | | |_dto
+
 | | | | | |_City.java
+
 | | | | | |_Connection.java
+
 | | | | |_repository
+
 | | | | | |_CityConnectionRepository.java
+
 | | | | | |_implementation
+
 | | | | | | |_CityConnectionRepositoryImpl.java
+
 | | | | |_service
+
 | | | | | |_CityConnectionService.java
+
 | | | | | |_implementation
+
 | | | | | | |_CityConnectionServiceImpl.java
+
 | | | |_resource
+
 | | | | |_application.properties
+
 | | | | |_City.txt
+
 | | |_test
+
 | | | |_java.com.yuki.codechallenge
+
 | | | | |_CodechallengeApplicationTests.java
+
 | | | | |_controllertest
+
 | | | | | |_CityControllerTest.java
+
 | | | | | |_ConnectionControllerTest.java
+
 | | | | |_repositorytest
+
 | | | | | |_CityConnectionRepositoryTest.java
+
 | | | | |_servicetest
+
 | | | | | |_CityConnectionServiceTest.java
+
 | |_target
 
 # Algorithm & Data Structure
