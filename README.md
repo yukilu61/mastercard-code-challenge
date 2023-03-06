@@ -166,16 +166,16 @@ Used a hash map to mark connections of current city, if two cities are connected
 
 ## DFS(Depth First Search)
 
-1. check origin city and destination city are existed. 
-2. start from origin city, mark all connected city as true in the hash map: 
+1.  check origin city and destination city are existed. 
+2.  start from origin city, mark all connected city as true in the hash map: 
 
-```Map<City, Boolean> markmap = new HashMap<>();```
+    ```Map<City, Boolean> markmap = new HashMap<>();```
 
-the KEY value is city, The VALUE value is **true** if connected with origin city, **false** if not connected with origin city.
+    the KEY value is city, The VALUE value is **true** if connected with origin city, **false** if not connected with origin city.
 
-3. if connected city in the map is already marked as true which means it has already searched, then do nothing, otherwise, the connected city is the first time to be searched, so depth first search connected city and mark it's connected city.
-4. repeat the step2 recursively until all connected cities are marked as true
-5. return the VALUE value of destination city in the map
+3.  if connected city in the map is already marked as true which means it has already searched, then do nothing, otherwise, the connected city is the first time to be searched, so depth first search connected city and mark it's connected city.
+4.  repeat the step2 recursively until all connected cities are marked as true
+5.  return the VALUE value of destination city in the map
 
 
 
