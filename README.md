@@ -69,7 +69,7 @@ City Connection Project is a microservice application based on Spring Boot and J
      "timestamp": "2023-03-06T07:00:34.063+00:00",
      "status": 500,
      "error": "Internal Server Error",
-     "message": "city: abc not found",
+     "message": "city: Orlando not found",
      "path": "/api/city/abc"
   }
   ```
@@ -98,7 +98,7 @@ Currently, No cloud server involved and no Security applied, so only local serve
 Use ```http://localhost:8080``` at first with certain api path to access the information you want!
 
 
-# Install & Steps to run application locally
+# Install & Steps to run application
 
 1. Install Java 8: [install java8](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
@@ -108,7 +108,7 @@ Use ```http://localhost:8080``` at first with certain api path to access the inf
 4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congratulations, you get the result!
 
-# Structure
+# Project Structure
 
 mastercard-code-challenge
 |_README.md
@@ -150,6 +150,25 @@ mastercard-code-challenge
 | | | | |_servicetest
 | | | | | |_CityConnectionServiceTest.java
 | |_target
+
+# Algorithm & Data Structure
+
+The algorithm used to implementation is DFS(Depth First Search) and depth first search connected city recursively 
+Used a hash map to mark connections of current city, if two cities are connected, then mark connected city as **true**, otherwise, marked unconnected as **false**
+
+## DTO
+
+- City
+  - (String) cityName: use to store current city name
+  - (ArrayList<String>) cityConnection: used to store all connected cities of current city
+- Connection
+  - (Map<City, List<String>>) connections: KEY value is city, and VALUE value is a list of connected cityname of this city
+
+
+
+
+
+
 
 
 
