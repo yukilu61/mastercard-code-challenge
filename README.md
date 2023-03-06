@@ -153,7 +153,7 @@ mastercard-code-challenge
 
 # Algorithm & Data Structure
 
-The algorithm used to implementation is DFS(Depth First Search) and depth first search connected city recursively 
+The algorithm used to implement city connection is DFS(Depth First Search). 
 Used a hash map to mark connections of current city, if two cities are connected, then mark connected city as **true**, otherwise, marked unconnected as **false**
 
 ## DTO
