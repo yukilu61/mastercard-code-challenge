@@ -86,15 +86,17 @@ City Connection Project is a microservice application based on Spring Boot and J
 ## server
 
 Currently, No cloud server involved and no Security applied, so only local server is available and local server port is 8080.
+
 Use ```http://localhost:8080``` at first with certain api path to access the information you want!
 
 # Install & Steps to run application locally
 
-1. install Java 8: [install java8](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
-2. git clone 
-3. choose favority IDE and run application in IDE
-4. input the query path, try this link: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
-5. congrulations, you get the result!
+1. Install Java 8: [install java8](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
+```git clone https://github.com/yukilu61/mastercard-code-challenge.git```
+3. open application in favority IDE and run application locally
+4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
+5. congratulations, you get the result!
 
 # Structure
 
