@@ -104,7 +104,7 @@ Use ```http://localhost:8080``` at first with certain api path to access the inf
 2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
 ```git clone https://github.com/yukilu61/mastercard-code-challenge.git```
 
-3. open application in favority IDE, add [City.txt](https://github.com/yukilu61/mastercard-code-challenge/blob/main/codechallenge/src/main/resources/city.txt) file under resource file and run application locally
+3. open application in favority IDE, add [city.txt](https://github.com/yukilu61/mastercard-code-challenge/blob/main/codechallenge/src/main/resources/city.txt) file under resource file and run application locally
 4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congratulations, you get the result!
 
