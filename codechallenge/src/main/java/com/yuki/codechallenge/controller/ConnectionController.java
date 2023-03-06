@@ -17,6 +17,8 @@ public class ConnectionController {
 
     @GetMapping("/connected")
     public String isTwoCityConnect(@RequestParam("origin") String originName, @RequestParam("destination") String destinationName) {
+        if (cityConnectionService.getCity(originName) == null || cityConnectionService.getCity(destinationName) == null)
+            return "city not found";
         return cityConnectionService.isTwoCityConnect(originName, destinationName) ? "yes" : "no";
     }
 

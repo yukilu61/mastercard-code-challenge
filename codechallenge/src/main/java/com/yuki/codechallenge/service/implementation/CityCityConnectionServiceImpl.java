@@ -34,8 +34,6 @@ public class CityCityConnectionServiceImpl implements CityConnectionService {
 
     @Override
     public Boolean isTwoCityConnect(String firstCity, String secondCity) {
-        if (getCity(firstCity) == null || getCity(secondCity) == null)
-            return false;
         List<City> allcity = getAllCity();
         Map<String, Boolean> marked = new HashMap<>();
         for (City city : allcity)
