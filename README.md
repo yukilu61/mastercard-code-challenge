@@ -82,12 +82,6 @@ City Connection Project is a microservice application based on Spring Boot and J
   ```
      
   isTwoCityConnect API will return **yes** if two city are connected, return **no** if two city are not connected and return **city not found** if either origin city or destination city is not found.
-     
-## server
-
-Currently, No cloud server involved and no Security applied, so only local server is available and local server port is 8080.
-
-Use ```http://localhost:8080``` at first with certain api path to access the information you want!
 
 ## code coverage
 
@@ -96,6 +90,13 @@ All unit tests are under src/test file, the overall coverage for application：
 |  Class%   |  Method& |  Line%  |
 |  ------   |  ------  |  -----  |
 |   100%    |    85%   |   92%   |
+     
+## server
+
+Currently, No cloud server involved and no Security applied, so only local server is available and local server port is 8080.
+
+Use ```http://localhost:8080``` at first with certain api path to access the information you want!
+
 
 # Install & Steps to run application locally
 
