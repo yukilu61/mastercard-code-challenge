@@ -1,15 +1,15 @@
 # (Mastercard)Code Challenge : City Connection
 
-[![city connection]](https://github.com/yukilu61/mastercard-code-challenge)
+[city connection](https://github.com/yukilu61/mastercard-code-challenge)
 
-## description
+## Description
 List of roads is available in a file. The file contains a list of city pairs (one pair per line, comma separated), which indicates that there’s a road between those cities. Provide two cities A and B, determine whether there is a road between city A and city B.
 
 - respond **yes** means there is a road between city A and city B
 - respond **no** means there is no road between city A and city B
 - respond **city not found** means city A is not existed or city B is not existed
 
-# configuration
+# Configuration
 
 City Connection Project is a microservice application based on Spring Boot and Java 8, it provides three main APIs and basic configuration information is listed below: 
 
