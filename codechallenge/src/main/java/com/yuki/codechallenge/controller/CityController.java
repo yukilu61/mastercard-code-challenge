@@ -28,7 +28,7 @@ public class CityController {
         City city = cityConnectionService.getCity(cityName);
         if (city == null) {
             log.error("city: " + cityName + " not found");
-            throw new RuntimeException("city" + cityName + " not found");
+            throw new RuntimeException("city: " + cityName + " not found");
         }
         return city;
     }

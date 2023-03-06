@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class CityCityConnectionServiceImpl implements CityConnectionService {
+public class CityConnectionServiceImpl implements CityConnectionService {
 
     @Autowired
     private CityConnectionRepository cityconnectionRepository;
