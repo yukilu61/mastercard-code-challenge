@@ -104,48 +104,48 @@ Use ```http://localhost:8080``` at first with certain api path to access the inf
 2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
 ```git clone https://github.com/yukilu61/mastercard-code-challenge.git```
 
-3. open application in favority IDE, add [City.txt]() file under resource file and run application locally
+3. open application in favority IDE, add [City.txt](https://github.com/yukilu61/mastercard-code-challenge/blob/main/codechallenge/src/main/resources/city.txt) file under resource file and run application locally
 4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congratulations, you get the result!
 
 # Project Structure
 
-mastercard-code-challenge
-├── README.md
-├── codechallenge
-│   ├── pom.xml
-│   ├── src
-│   │   ├── main
-│   │   │   ├──java.com.yuki.codechallenge
-│   │   │   │  ├── CodechallengeApplication.java
-│   │   │   │  ├── controller
-│   │   │   │  │   ├── CityController.java
-│   │   │   │  │   └── ConnectionController.java
-│   │   │   │  ├── dto
-│   │   │   │  │   ├── City.java
-│   │   │   │  │   └── Connection.java
-│   │   │   │  ├── repository
-│   │   │   │  │   ├── CityConnectionRepository.java
-│   │   │   │  │   └── implementation
-│   │   │   │  │       └── CityConnectionRepositoryImpl.java
-│   │   │   │  └── service
-│   │   │   │  │   ├── CityConnectionService.java
-│   │   │   │  │   └── implementation
-│   │   │   │  │       └── CityConnectionServiceImpl.java
-│   │   │   ├──resource
-│   │   │   │  ├── application.properties
-│   │   │   │  └── City.txt
-│   │   └── test
-│   │       └──java.com.yuki.codechallenge
-│   │          ├── CodechallengeApplicationTests.java
-│   │          ├── controllertest
-│   │          │   ├── CityControllerTest.java
-│   │          │   └── ConnectionControllerTest.java
-│   │          ├── repositorytest
-│   │          │   └── CityConnectionRepositoryTest.java
-│   │          └── servicetest
-│   │              └── CityConnectionServiceTest.java
-└── └── target
+mastercard-code-challenge  
+├── README.md  
+├── codechallenge  
+│   ├── pom.xml  
+│   ├── src  
+│   │   ├── main  
+│   │   │   ├──java.com.yuki.codechallenge  
+│   │   │   │  ├── CodechallengeApplication.java  
+│   │   │   │  ├── controller  
+│   │   │   │  │   ├── CityController.java  
+│   │   │   │  │   └── ConnectionController.java  
+│   │   │   │  ├── dto  
+│   │   │   │  │   ├── City.java  
+│   │   │   │  │   └── Connection.java  
+│   │   │   │  ├── repository  
+│   │   │   │  │   ├── CityConnectionRepository.java  
+│   │   │   │  │   └── implementation  
+│   │   │   │  │       └── CityConnectionRepositoryImpl.java  
+│   │   │   │  └── service  
+│   │   │   │  │   ├── CityConnectionService.java  
+│   │   │   │  │   └── implementation  
+│   │   │   │  │       └── CityConnectionServiceImpl.java  
+│   │   │   ├──resource  
+│   │   │   │  ├── application.properties  
+│   │   │   │  └── City.txt  
+│   │   └── test  
+│   │       └──java.com.yuki.codechallenge  
+│   │          ├── CodechallengeApplicationTests.java  
+│   │          ├── controllertest  
+│   │          │   ├── CityControllerTest.java  
+│   │          │   └── ConnectionControllerTest.java  
+│   │          ├── repositorytest  
+│   │          │   └── CityConnectionRepositoryTest.java  
+│   │          └── servicetest  
+│   │              └── CityConnectionServiceTest.java  
+└── └── target  
 
 # Algorithm & Data Structure
 
