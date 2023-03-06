@@ -89,11 +89,20 @@ Currently, No cloud server involved and no Security applied, so only local serve
 
 Use ```http://localhost:8080``` at first with certain api path to access the information you want!
 
+## code coverage
+
+All unit tests are under src/test file, the overall coverage for application：
+
+|  Class%   |  Method& |  Line%  |
+|  ------   |  ------  |  -----  |
+|   100%    |    85%   |   92%   |
+
 # Install & Steps to run application locally
 
 1. Install Java 8: [install java8](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 2. use git clone command to clone application from [repository](https://github.com/yukilu61/mastercard-code-challenge.git)
 ```git clone https://github.com/yukilu61/mastercard-code-challenge.git```
+
 3. open application in favority IDE and run application locally
 4. input the query path, try this link if application is running: [is Boston and Newark Connected](http://localhost:8080/api/connection/connected?origin=Boston&destination=Newark)
 5. congratulations, you get the result!
